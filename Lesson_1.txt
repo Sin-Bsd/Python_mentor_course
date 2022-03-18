@@ -1,0 +1,61 @@
+Python programming : 
+
+Lesson 1 : 
+
+Guideline : 
+    How to make the best of each lesson : 
+        1 - Don't take any lesson for granted : Make sense of everything, ask questions. Everything is easier to memorize if you can make sense of it. 
+        2 - Watching and/or reading are the worst thing you can gift yourself, you're not learning anything like that
+        3 - Be lazy : Learn patterns, and know how something can be reproduced with the least step possible.
+    
+            Optimise learning : Sleep ! Train ! Repeat
+            Your brain is wired so that neuron creates an activation stronger everytime, you need to do a thing n times until you master it.
+            Do not copy code! Understand each line until you can produce the same code.
+            Keep a written memento of every step you've achieved and the goals you're aiming. 
+
+
+Objectives of this course : 
+
+    1 - Understand the logic behind programming, know the different uses of python, understand how the logic flow works on python
+    2 - Know your environnement, know what's an IDE and pip
+    3 - Write your first code : 
+
+The concepts : 
+    Programming ? 
+    Python ? Python3 
+    Operation, logic flow
+
+Env :
+    install python :
+    ide : 
+
+Variables : 
+
+    python syntax : lowercase, no spaces, comments
+                    note the indentation in every lesson, python uses indentation efficiently to divise zones
+    print() :
+        (0.5) - help() / __doc__ 
+        a - "" or ''
+        b - \n
+    
+    ex. 1 : print 'Hello' followed by your name
+    ex. 2 : print '
+                    roses are red,
+                    violets are blue,
+                    python programming is fun,
+                    isn't that true ?' 
+    
+    variable = 
+        str / int / float
+
+        
+    input()
+    
+    ex. 4 : Write a program that asks you your name and then returns Hello 'person'  
+    ex. 5 : Write a program that asks you your name, your age and returns Hello 'person', you are 'age' years old. 
+    ex. 6 : Write a program that asks you 'What hour it is?' and returns the time answered and adds '{digit} in the morning ? I'm late for work!!'  
+    
+    type() : (str/int/float)
+
+    ex. 7 : Write a program that asks for your favorite sport and how many years you've been playing it and returns it. 
+    ex. 8 : Write a program that asks for your age, your height, and your size (with one decimal)

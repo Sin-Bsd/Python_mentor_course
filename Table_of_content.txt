@@ -1,0 +1,55 @@
+Lesson 1 :
+
+    Guideline
+    Objectives of this course
+    The concepts
+    Env
+    Introduction
+        python syntax
+        print()
+        variables
+        type()
+    Exercices
+
+Lesson 2 : 
+
+    Objectives of this course
+    Numbers
+        int
+        float
+        round()
+        formatting
+        operators in python 
+    Exercices
+
+Lesson 3 : 
+    
+    Objectives of this course
+    Conditionals and control flow
+        booleans 
+        if statement
+        elif / else
+        len()
+    Exercices
+
+Lesson 4 : 
+
+    Objectives of this course
+    lists, tuples
+        lists
+            list creation, list update and list manipulation
+        tuples
+    Exercices
+
+Lesson 5 : 
+    
+    Objectives of this course
+    Looping
+        for loop
+        while loop
+        type of loop
+    Exercices
+
+Lesson 6 :
+Lesson 7 :
+Lesson 8 : 
