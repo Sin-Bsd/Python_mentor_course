@@ -1,0 +1,43 @@
+Lesson 3 :
+
+Objective of this course :
+    1 - Understanding the process order and control flow
+    2 - Divide program operation under certain conditionals
+    3 - Understand if,elif and else statement and their operators
+
+Conditionals and control flow:
+
+    booleans : True or False
+    
+    if statement : 
+        'if' statements are not necessarly followed up with an else
+        'if' statements can be followed with elif, else.
+        'if' statements use comparaisons to decide of the flow, the comparators are : 
+            == : Equal to
+            != : Not equal to
+            is : // 
+            is not : //
+            < : smaller than
+            > : greater than
+            in : contained within
+            not in : not contained within 
+
+        'if' statements can be added one after the other, also they can be either/or:
+            and : condition A and condition B should be True
+            or : either condition A or condition B should be True
+        
+        'elif' is the second best choice when using conditionals (short for else if) 'elif' should be used when you have more than two possible outcomes in your code, in which case you are better off using if and else. 
+        'else' isn't totally comparable to 'if' because it doesn't ask for any condition, it should be added as the default option if the condition wasn't met
+
+        a = 'Diligence'
+        b = 'Patience'
+        c = 'Effort'
+        A = 'Problem-solving'
+        B = 'Curiousity'
+
+    ex 1. create a program that checks if a, b, c, d are values, if they are : return 'Yes, #addthevariables it is true'
+    ex 2. create a program that checks if either A, B, C or D exist, if they are : return 'Yes, #addthevariable exists, but #missingvariables don't.'
+    ex 3. create a program that asks your name, and one of your buddy's name. return the longest name first with this sentence '#person has the longest name'
+          hint : len() is a function to check for a variable's length
+    ex 4. think about your birthdate (or someone's) : write as many if statements to check if the year match, if the month, etc... until 
+        you reach up to the only possibility being born at your birthdate! 

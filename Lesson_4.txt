@@ -1,0 +1,114 @@
+Lesson 4:
+
+Objectives of this course:
+    
+    1 - Understand python lists and its proprieties
+    2 - Learn list manipulation
+    3 - Understand python tuples and its proprieties
+    4 - Learn tuple manipulation
+
+lists, tuples :
+
+    lists :
+        List items are ordered, changeable, and allow duplicate values.
+        List items are indexed
+            what is an index in python programming ? [0], [start:stop:step]
+            where can that be used ? str, list, tuples, iterables, ...
+            fun fact : You can use index in str variables !
+        List items can be of several types : str, int, boolean + they can be of different types within the same list
+    
+    example_lst = ('abc', '123', True, False, '541', 'xyz')
+    
+    ex 1.  What would be the output if : 
+                a - my python code is print(example_lst[1])
+                b - my python code is print(example_lst[0:])
+                c - my python code is print(example_lst[-1])
+                d - my python code is print(example_lst[::1])
+                e - my python code is print(example_lst[::-2])
+    
+    ex 2. How can I change my second value in the example_lst to be 321 instead of 123 ?
+    ex 3. Write a program that returns the len() of a list if it's smaller than 3, but returns the list values if it's bigger than 3
+
+    list creation, list update and list manipulation: 
+        list creation :
+            lst = list()
+            type(lst)
+            lst = []
+            type(lst)
+        list access:
+            lst[0] or list[1]
+            what is my value's index ? -> lst.index('myvalue')
+        
+        list modification: 
+            
+            updating: 
+                lst[1] = 'Bonjour'
+                lst[1:3] = 'Hello', 'How are you', 'How's your dad?'
+
+            add values: 
+                lst.append(str) #the append() function adds the value after the last existing item
+                lst.insert(index, str) #the insert() function adds the value after wherever the index referenced
+                lst.extend(other_lst) #the extend() function joins the two lists together, but it can also be used for str, tuples, set, dictionaries
+                
+                note : lst.extend(lst_2) == lst_1 + lst_1 == lst_1.append(lst_2)
+            
+            del values:
+                lst.remove('Bonjour') #remove the item called its value
+                lst.pop(1) #remove the item called by its index, it removes the last item if the index is not specified
+                del lst[0] #removes the specified item
+                lst.clear() #clears the items of the list to make it empty
+
+            various func:
+                lst.sort() #sort the list by its content
+                lst.sort(reverse= True) #arg in a function that reverses the order
+                lst.reverse()
+                lst.copy()
+                len(lst)
+                lst.count()
+    
+    tuples :
+        tuples act like lists(Tuple items are ordered, and allow duplicate values.), but they are immutable : their values cannot be changed. 
+        What's the use ? 
+        
+        import sys
+
+        lst_a = list(('test', '123', '567', 'still testing','program'))
+        tuple_a = tuple(('test', '123', '567', 'still testing','program'))
+
+        print(sys.getsizeof(lst_a))
+        print(sys.getsizeof(tuple_a))
+
+        a tuple is lighter than a list, because list use empty space to prepare for other values.
+
+        tuples can technically be alterated, but not as directly as lists. You cannot update value or append items,
+        a workaround this is to create another tuple.
+
+        e.g. : 
+        tuple_1 = ('test', '123', '567', 'still testing','program')
+        tuple_2 = ('python', 'opu', '548', 'devops','vscodium')
+        tuple_3 = tuple_1 + tuple_2
+        or 
+        tuple_3 = tuple_1
+    
+
+    Exercices :
+
+        ex 4. create a list containing your name and age and turn it into a tuple
+        ex 5. print the tuple in reverse order
+
+        list_a = (a,b,c,d,e)
+        list_b = (d,e,c,a,b)
+        ex 5. create a program that checks if the list starts by a, if it does : set the list into a tuple, if it doesn't, sort through the list then only convert the list to a tuple. 
+                In either case, print the tuple.
+        
+        lst = (a,b,c,d)
+        tpl = [a,b,c,d]
+        ex 6. create a program that checks if the variable is a list or a tuple.
+                if the variable is a list, print the type of last item
+                if the variable is a tuple, print the length of first item.
+        
+        lst = (0,1,2,3,4,5,6,7,8,9)
+        ex 7. create a program that checks if the item value is the same as its index:
+                if that's true, return 'They are one and the same'
+                if that's false, return ' pow pow pow ...'
+                

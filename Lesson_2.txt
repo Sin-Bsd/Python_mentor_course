@@ -1,0 +1,31 @@
+
+Lesson 2 :
+Objectives of this course : 
+
+    1 - Understand int and float type 
+    2 - Operate on numbers 
+    2 - Use a few integrated functions on numbers
+
+Numbers : 
+
+
+    int : 
+        are rounded numbers.
+    float : 
+        are numbers with decimal(s).
+    
+    round():
+    f'{a:.3g}'
+    operators in python : 
+        + : (plus)
+        - : (minus)
+        * : (multiply)
+        ** : (square root)
+        / : (divide)
+        % : (ratio)
+    
+    ex. 1 : create a program that asks for some tshirt's price and returns the price of ten tshirts
+    ex. 2 : create a program that asks for the price of 3 tshirts and 
+            returns the price of 5 tshirts knowing that 5 tshirts gives you 30% off. 
+    ex. 3 : create a program that asks a round number for input, and returns the ratio of being divided by two. 
+    ex. 4 : create a terminal based calculator that can use the 4 main operators and returns the result.

@@ -1,0 +1,125 @@
+Lesson 5:
+
+Objectives : 
+    1 - Understand the basics for loop: for and while, range(), len(), enumerate()
+    2 - Incorporate that knowledge with previous knowledge (if statment with loops, lists, ...)
+    3 - Play with logic flow and iterable variables
+
+For loops and while loops:
+
+    loop: 
+        Used to repeat a task n many times. It's one of the best tools of a programmer. 
+        
+        The argument passed must be an iteration, meaning a variable that is sliced several items. 
+        as such, any list can be the variable. from the list_variable, we extract an element. 
+        each element == one iteration
+
+        Loops can be limited, infinite, nested. 
+        
+        each iteration calls for the same code within. 
+
+        for loop :
+
+            A for loop has two arguments:
+                
+                for {element} in {iterator}:
+            
+            The element can be anything, it's not a value rather just a name we will use to refer the iteration.
+            The iterator can be a set, a list, a tuple or others iterable variables. 
+            The main attribute needed in this variable is the amount of iterations the loop should produce.
+            
+            Note : if you are using a list, each item will be returned as the element of the loop.
+                    meaning : 
+
+                    for i in ['Zero','One','Two','Three']:
+                        print(i)
+                    the first iteration will be Zero, then followed by One, etc. 
+
+                    if you wanted to use the amount of items as the range of the loop, it should be used with the function range()
+
+                    for {count} in range(len({})):
+                        ...
+
+                    
+                    The range(start,finish,step) use at least one parameter : how many numbers it should run.  
+                    it creates a list of elements from start to finish. if start is not added, it will use 0 as a starting point and a step of 1.
+                    I suggest you see the range() func args yourself with __doc__ or help()
+
+        while loop: 
+            
+            a while loop can be used like an if statement.
+            a while loop can pretty much be used like a for loop, but depending on the condition, it can also be infinite.
+
+            a simple use of while loop is to create a greater than/smaller than condition 
+            where the amount of iteration is in the count.
+
+                count = int()
+                while count < 5: 
+                
+                or 
+
+                while switch == True:
+
+            note : if you remember the course on logic flow, you can understand why count is firstly made outside the loop. 
+                    As the code of the loop start, if count doesn't exist it cannot start the loop. 
+                    When a variable is called but not defined, the code will return an error message.
+                    The same problem can appear in a for loop. 
+
+                    for i in range(10):
+                        lst_digit.append(i)
+                    
+                    will return : 'NameError: name 'lst_digit' is not defined'
+
+        To use loop proficiently you have to visualize the patterns and how it derivates the logic flow:  
+        
+            limited : 
+                for i in ite_variable:
+                    ...
+            
+            infinite : 
+                while True:
+                    ...
+            
+            nested :
+                for ite_variable in greater_ite_variable:
+                    for a in ite_variable:
+
+
+        ex. 1 : 
+            list_names = ['David', 'Esteban', 'Joe']
+
+            for name in list_names:
+                print(name)
+                for character in name: 
+                    print(character)
+
+            Don't copy and run the code, visualize the loop. 
+            What would be the first thing printed in the output ?  
+            What would be the last thing printed in the output ? 
+        
+        ex. 2: 
+            if my for-loop has this :
+                for i in range(5):
+                    print(i)
+            
+            What would the output be ? 
+        
+        ex. 3:  for i in range(10):
+                        lst_digit.append(i)
+
+                what would be the output ? 
+
+                for i in range(10):
+                        lst_digit = lst()
+                        lst_digit.append(i)
+
+                what would be the output ? 
+                
+                lst_digit = lst()
+                for i in range(10):
+                        lst_digit.append(i)
+
+        ex. 4: Write a loop that counts from 10 to 1
+        ex. 5: Write a loop that asks for input, then won't stop printing 'Hello' unless the input is 'stop'
+        ex. 6: Your friend tells you about his job : He needs to write the door number for a building that has 9 floors, and 10 rooms for each floor.
+                hint : use nested loop and append the result in a new list
